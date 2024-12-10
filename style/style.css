@@ -20,3 +20,10 @@ body h1 {
     display: flex;
     justify-content: center;
 }
+
+.btn-input-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
