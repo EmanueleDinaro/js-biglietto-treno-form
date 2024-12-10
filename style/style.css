@@ -1,0 +1,22 @@
+body {
+    background-color: #B91450;
+}
+
+.container {
+    margin: auto;
+    max-width: 900px;
+    height: 900px;
+
+}
+
+body h1 {
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.form-box {
+    display: flex;
+    justify-content: center;
+}
