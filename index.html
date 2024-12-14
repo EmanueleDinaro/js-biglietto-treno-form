@@ -13,25 +13,63 @@
     <main>
         <div class="form-box">
             <form id="form" action="">
-                <input type="text" id="fullname" placeholder="Inserisci il tuo nome">
-                <input type="number" id="km" placeholder="Inserisci il numero di km">              
-                <select name="age" id="age">
-                    <option value="maggiorenne">Maggiorenne</option>
-                    <option value="minorenne">Minorenne</option>
-                    <option value="senior">Over 65</option>
-                </select>
-                <div class="btn-input-form">
-                    <input type="submit">
-                    <input type="reset">
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            <label for="fullname">Nome e Cognome</label>
+                            <input type="text" id="fullname" placeholder="Inserisci il tuo nome">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="km">KM da percorrere</label>
+                        <input type="number" id="km" placeholder="Inserisci il numero di km">   
+                    </div>
+                    <div class="col">
+                        <label for="age">Età</label>      
+                        <select name="age" id="age">
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="minorenne">Minorenne</option>
+                            <option value="senior">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <div class="btn-input-form">
+                            <button type="submit" id="submit-form">Invio</button>
+                            <button type="reset" id="reset-ticket">Reset</button>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>
         <div id="ticket-train" class="d-none">
-            <span id="ticket-name"></span>
-            <span id="ticket-type"></span>
-            <span id="carriage"></span>
-            <span id="cp-code"></span>
-            <span id="ticket-price"></span>
+            <h2>DETTAGLIO PASSEGGERI</h2>
+            <hr>
+            <div class="row">
+                <div class="col name-passenger">
+                    <h3>NOME PASSEGGERO</h3>
+                    <strong><span id="ticket-name"></span></strong>
+                </div>
+                <div class="col">
+                    <h4>Offerta</h4>
+                    <span id="ticket-type"></span>
+                </div>
+                <div class="col">
+                    <h4>Carrozza</h4>
+                    <span id="carriage"></span>
+                </div>
+                <div class="col">
+                    <h4>Codice CP</h4>
+                    <span id="cp-code"></span>
+                </div>
+                <div class="col">
+                    <h4>Costo Biglietto</h4>
+                    <span id="ticket-price"></span>
+                </div>
+            </div>
+            <hr>
         </div>
     </main>
 
